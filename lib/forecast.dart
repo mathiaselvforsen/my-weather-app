@@ -161,7 +161,7 @@ class ForecastPageState extends State<ForecastPage> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 50),
               child: Text(
-                'The weather forecast for the next days in at 12:00 :',
+                'The weather forecast for the next days at 12:00 in :',
                 style: GoogleFonts.fredoka(
                   fontSize: 24,
                   fontWeight: FontWeight.w600,
