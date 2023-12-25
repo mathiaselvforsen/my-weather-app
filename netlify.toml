@@ -1,3 +1,3 @@
 [build]
-  command = "NODE_PATH=$NODE_PATH:/opt/homebrew/bin flutter build web"
+  command = "export PATH=\"$PATH:/opt/homebrew/bin\" && flutter build web"
   publish = "build/web"
