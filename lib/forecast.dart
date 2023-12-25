@@ -12,12 +12,12 @@ class ForecastPage extends StatefulWidget {
   final String? longitude;
 
   const ForecastPage({
-    Key? key,
+    super.key,
     required this.navBarItems,
     required this.selectedIndex,
     this.latitude,
     this.longitude,
-  }) : super(key: key);
+  });
 
   @override
   ForecastPageState createState() => ForecastPageState();

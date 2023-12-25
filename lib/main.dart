@@ -20,7 +20,7 @@ void main() {
 }
 
 class YourWeatherPage extends StatefulWidget {
-  const YourWeatherPage({Key? key}) : super(key: key);
+  const YourWeatherPage({super.key});
 
   @override
   State<YourWeatherPage> createState() => _YourWeatherPageState();

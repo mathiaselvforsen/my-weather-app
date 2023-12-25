@@ -9,12 +9,12 @@ class AboutPage extends StatefulWidget {
   final String? longitude;
 
   const AboutPage({
-    Key? key,
+    super.key,
     required this.navBarItems,
     required this.selectedIndex,
     this.latitude,
     this.longitude,
-  }) : super(key: key);
+  });
 
   @override
   AboutPageState createState() => AboutPageState();
