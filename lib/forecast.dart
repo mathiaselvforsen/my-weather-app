@@ -161,7 +161,7 @@ class ForecastPageState extends State<ForecastPage> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 50),
               child: Text(
-                'The weather forecast for the next days in:',
+                'The weather forecast for the next days in at 12:00 :',
                 style: GoogleFonts.fredoka(
                   fontSize: 24,
                   fontWeight: FontWeight.w600,
@@ -203,6 +203,7 @@ class ForecastPageState extends State<ForecastPage> {
                       ],
                     ),
                     child: ListTile(
+                      contentPadding: const EdgeInsets.all(16.0),
                       leading: Image.asset(
                         weatherImages[iconCode]?? '',
                         width: 75,
@@ -213,9 +214,9 @@ class ForecastPageState extends State<ForecastPage> {
                       trailing: Column(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
-                          const SizedBox(height: 10),
+                        
                           Text('$dateTime',style:  GoogleFonts.fredoka(fontSize: 18, fontWeight: FontWeight.w600),),
-                          const SizedBox(height: 5),
+                         
                           Text('$weekday',style:  GoogleFonts.fredoka(fontSize: 14,  fontWeight: FontWeight.w600),),
                         ],
                       ),
